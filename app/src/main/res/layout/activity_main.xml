@@ -8,29 +8,76 @@
     tools:context=".MainActivity"
     android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="보여줄 문구"/>
-
-    <EditText
-        android:id="@+id/contentEdt"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="아무 문장이나 입력"/>
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/okBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="문장 반영"/>
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/lia_logo"/>
 
-    <TextView
-        android:id="@+id/resultTxt"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나도 뭐가 될지 모르겠다. Lia"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="입력한 내용이 나올 자리"/>
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#6148b0"
+            android:id="@+id/putiD"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일 형식 입력"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PW"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#6148b0"
+            android:layout_marginTop="20dp"
+            android:id="@+id/putPW"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="8자리 이상 입력"
+            android:inputType="numberPassword" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:id="@+id/confirmBtn"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>
