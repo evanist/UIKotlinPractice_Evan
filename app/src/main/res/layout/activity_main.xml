@@ -38,10 +38,10 @@
             android:text="ID"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#6148b0"
-            android:id="@+id/putiD"/>
+            android:textColor="#6148b0" />
 
         <EditText
+            android:id="@+id/idEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="이메일 형식 입력"/>
@@ -53,14 +53,14 @@
             android:textStyle="bold"
             android:textSize="20dp"
             android:textColor="#6148b0"
-            android:layout_marginTop="20dp"
-            android:id="@+id/putPW"/>
+            android:layout_marginTop="20dp"/>
 
         <EditText
+            android:id="@+id/pwEdt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="8자리 이상 입력"
-            android:inputType="numberPassword" />
+            android:inputType="textPassword" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="로그인"
-            android:id="@+id/confirmBtn"
+            android:id="@+id/loginBtn"
             android:layout_marginTop="15dp"/>
 
 

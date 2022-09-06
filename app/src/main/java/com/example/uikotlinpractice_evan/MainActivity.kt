@@ -9,17 +9,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        loginBtn.setOnClickListener {
 
-        if confirmBtn.setOnClickListener {
-            putiD = admin@test.com
-            putPW = 123456
+
+            val inputID = idEdt.text.toString()
+            val inputPW = pwEdt.text.toString()
+
+            if (inputID == "admin@test.com" && inputPW == "qwer") {
+                Toast.makeText(this, "관리자 입니다.", Toast.LENGTH_SHORT).show()
+            }
+
+            else {
+                Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show()
+            }
+
         }
-
-        Toast.makeText("관리자 입니다.", Toast.LENGTH_SHORT).show()
-
-        else
-
-        Toast.makeText("로그인 실패", Toast.LENGTH_SHORT).show()
 
     }
 }
