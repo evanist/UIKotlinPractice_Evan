@@ -16,7 +16,10 @@ class MainActivity : AppCompatActivity() {
             val inputPW = pwEdt.text.toString()
 
             if (inputID == "admin@test.com" && inputPW == "qwer") {
-                Toast.makeText(this, "관리자 입니다.", Toast.LENGTH_SHORT).show()
+
+                val name = "Evan.P"
+
+                Toast.makeText(this, "${name} 관리자 입니다.", Toast.LENGTH_SHORT).show()
             }
 
             else {
